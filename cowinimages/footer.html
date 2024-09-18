@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>footer</title>
+    <style>
+      .container-fluid {
+        background: #007c7c;
+        color: #fff;
+
+        padding: 30px 0 0;
+      }
+      h4{
+        text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+    color: #99d9d9;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+      }
+      ul{
+        margin-bottom: 10px;
+                font-weight: 300; list-style-type: none;
+      }
+      a{
+        color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    
+    text-decoration: none;
+    background-color: transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tab-container">
+        <div class="tab-header">
+          <button class="tab-btn" onclick="showTab(event, 'tab1')">Tab 1</button>
+          <button class="tab-btn" onclick="showTab(event, 'tab2')">Tab 2</button>
+          <button class="tab-btn" onclick="showTab(event, 'tab3')">Tab 3</button>
+        </div>
+        <div id="tab1" class="tab-content">
+          Content for Tab 1
+        </div>
+        <div id="tab2" class="tab-content" style="display: none;">
+          Content for Tab 2
+        </div>
+        <div id="tab3" class="tab-content" style="display: none;">
+          Content for Tab 3
+        </div>
+      </div>
+      
+      <script>
+        function showTab(event, tabId) {
+          // Hide all tab content
+          var tabContents = document.querySelectorAll('.tab-content');
+          tabContents.forEach(function(tab) {
+            tab.style.display = 'none';
+          });
+      
+          // Deactivate all tab buttons
+          var tabButtons = document.querySelectorAll('.tab-btn');
+          tabButtons.forEach(function(btn) {
+            btn.classList.remove('active');
+          });
+      
+          // Show the selected tab content
+          var selectedTab = document.getElementById(tabId);
+          selectedTab.style.display = 'block';
+      
+          // Activate the clicked tab button
+          event.currentTarget.classList.add('active');
+        }
+      </script>
+      
+      <style>
+        .tab-container {
+          border: 1px solid #ccc;
+          padding: 10px;
+          margin-bottom: 20px;
+        }
+        .tab-header {
+          display: flex;
+        }
+        .tab-btn {
+          background-color: #f1f1f1;
+          border: none;
+          padding: 10px 20px;
+          cursor: pointer;
+          transition: background-color 0.3s;
+        }
+        .tab-btn:hover {
+          background-color: #ddd;
+        }
+        .tab-btn.active {
+          background-color: #ddd;
+        }
+        .tab-content {
+          display: none;
+          padding: 10px;
+        }
+      </style>
+      
+    <section class="footer">
+        <div class="footercontainer">
+          <div class="container-fluid">
+            <div class="row"style="display: flex;justify-content:space-evenly;" >
+              <div class="col-lg-12 md-6">
+                <div class="row" style="display: flex;">
+                  <div class="col-6 col-md-4 mb-sm-3 mb-md-0">
+                      <h4>
+                          Vaccination Services
+                      </h4>
+                      <ul >
+                          <li   >
+                              <a href="#">Register Members</a>
+                          </li>
+                          <li>
+                              <a href="#">Search Vaccination Centres</a>
+                          </li>
+                          <li>
+                              <a href="#">Book Vaccination Slots</a>
+                          </li>
+                          <li>
+                              <a href="#">Manage Appoinments</a>
+                          </li>
+                          <li>
+                              <a href="#">Download Certificates</a>
+                          </li>
+                          
+                        </ul>
+                  </div>
+                  <div class="col-6 col-md-4">
+                      <h4>
+                          PLATFORMS
+                         </h4>
+                         <ul >
+                             <li   >
+                                 <a href="#">CO_Win Internationals</a>
+                             </li>
+                             <li>
+                                 <a href="#">vaccinator</a>
+                             </li>
+                             <li>
+                                 <a href="#">Department Locatot</a>
+                             </li>
+                             <li>
+                                 <a href="#">Verify Certificates</a>
+                             </li>
+                             <li>
+                                 <a href="#">Vaccination Statistics </a>
+                             </li>
+                             
+                           </ul> 
+      
+                  </div>
+                  <div class="col-6 col-md-4">
+                      <h4>
+                          RESOURCES
+                      </h4>
+                      <ul >
+                          <li   >
+                              <a href="#">How to get vaccinated</a>
+                          </li>
+                          <li>
+                              <a href="#">Dos and Don'ts</a>
+                          </li>
+                          <li>
+                              <a href="#">Overview</a>
+                          </li>
+                          <li>
+                              <a href="#">API Guidelines</a>
+                          </li>
+                          <li>
+                              <a href="#">Open API's</a>
+                          </li>
+                          <li>
+                              <a href="#">Grievance Guidelines</a>
+                          </li>
+                          
+                        </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                  <div class="row mb-2"style="display: flex;">
+                      <div class="d-none d-md-block col-md-4 col-lg-6 vaccinationServices supportList">
+                          <h4>SUPPORT</h4>
+                          <ul>
+                              <li>
+                                  <a href="#">Frequently Asked Questions</a>
+                              </li>
+                              <li>
+                                  <a href="#">Certificate Corrections</a>
+                              </li>
+                          </ul>
+                      </div>
+                      
+                      <div class="col-md-8 col-lg-6 vaccinationServices">
+                          <h4>Contact Us</h4>
+                          <div class="row"style="display: flex;">
+      <div class="col-12 helpline">
+          <p>helpline <span>91-11-23978046</span></p>
+          <p>Technical helpline <span>
+              0120-4783222
+          </span></p>
+      </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row mt-2 helplineContacts" style="display: flex;">
+                  <div class="col-12 col-sm-12 col-md-12 col-1g-12">
+                      <ul style="display: flex;">
+                          <li>
+                              <h4>Child</h4>
+                              <span><a href="">1098</a></span>
+                          </li>
+                          <li>
+                              <h4>Mental Health</h4>
+                              <span><a href="">08046110007</a></span> 
+                          </li>
+                          <li> <h4>SENIOR CITIZENS</h4>
+                              <span><a href="">14567</a></span></li>
+                          <li><h4>ncw</h4>
+                              <span><a href="">7827170170</a></span></li></li>
+                      </ul>
+                  </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+  </body>
+</html>
